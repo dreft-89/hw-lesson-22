@@ -1,6 +1,6 @@
 const getDiscriminant = (a, b, c) => b * b - 4 * a * c;
 
-const getRoot = (a, b, c) => {
+let getRoot = (a, b, c) => {
   const discriminant = getDiscriminant(a, b, c)
 
   if (discriminant < 0) {
@@ -19,12 +19,3 @@ const getRoot = (a, b, c) => {
     }
   }
 }
-
-// alert('getRoot(2,3,2)');
-
-// module.exports = {
-//   getDiscriminant,
-//   getRoot
-// }
-
-// alert(getRoot(2,3,2))
