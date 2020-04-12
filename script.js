@@ -1,8 +1,7 @@
-let getDiscriminant = (a, b, c) => b * b - 4 * a * c;
+const getDiscriminant = (a, b, c) => b * b - 4 * a * c;
 
-let getRoot = (a, b, c) => {
-  let discriminant = getDiscriminant(a, b, c)
-  const x1, x2,
+const getRoot = (a, b, c) => {
+  const discriminant = getDiscriminant(a, b, c)
 
   if (discriminant < 0) {
     return {}
